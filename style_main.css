@@ -1,0 +1,66 @@
+/*General*/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  color: #ccf
+}
+
+.box h1,
+.box h2,
+.box p,
+.box ul {
+  padding: 0 12px;
+  margin: 0 12px;
+}
+.title {
+  margin-top: 0px;
+  height:5%;
+  background-color: #111;
+  width: 100%;
+}
+.title h1 {
+  color: #fff;
+  font: "arial";
+}
+
+.navbar{
+  background-color: #222;
+  padding-left:24px;
+}
+.navbar a:hover,
+.navbar li span{
+  background-color: #fff;
+  color: #222;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  display:inline;
+}
+.navbar li a,
+.navbar li span{
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+.content {
+  margin: 12px 0;
+}
+
+/*index.html*/
+.links ul {
+  list-style-type: none;
+}
+.links li::before{
+  content: "\25B8"
+}
