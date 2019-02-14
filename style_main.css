@@ -69,3 +69,9 @@ a:hover {
 .links li::before{
   content: "\25B8"
 }
+
+/*projects*/
+.project img{
+  width:300px;
+  height:235px;
+}
