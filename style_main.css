@@ -70,6 +70,11 @@ a:hover {
 }
 
 /*projects*/
+.project {
+  /*text outline*/
+  color: #fff;
+  text-shadow: -0.75px 0 #000, 0 0.75px #000, 0.75px 0 #000, 0 -0.75px #000;
+}
 .project img{
   width:300px;
   height:235px;
