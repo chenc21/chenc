@@ -27,3 +27,58 @@
         <li><span>Week 11/12: Final Project</span></li>
       </ul>
     </div>
+
+    <div class = "box project">
+      <h2>
+        Project overview
+      </h2>
+      <p>
+        For the final project, I will be attempting to create a functional tablet. I will be using a Raspberry Pi as the mainboard and adding on a touchscreen, battery and GPS reciever. I will also be 3D Printing a case for the tablet in order to protect it. I will be trying to run Android 9.0 on the machine through <a href = "http://raspex.exton.se/?p=1111">RaspAnd Pie 9</a>. However, as Android is a very demanding Linux OS and the RPi does have severe limitations in pure computing performance (I will be using the Model 3B) performance issues may force me to seek alternatives such as Ubuntu MATE or Mint (Debian Edition).
+      </p>
+      <br>
+      <ul>The end product should be able to:
+        <li>Be used with a touch interface only</li>
+        <li>Connect to the internet and run webapps (except for video-streaming) properly</li>
+        <li>Run with satisfactory performance (no sudden frame drops, throttling, consistent stuttering)</li>
+        <li>Multitask</li>
+      </ul>
+    </div>
+
+    <div class = "box project">
+      <h2>
+        Equipment list
+      </h2>
+      <ul>
+        <li>Raspberry Pi (Model 3B)</li>
+        <li>Raspberry Pi official 7" touchscreen</li>
+        <li>Power Supply/Battery board with USB outputs</li>
+        <li>3800mAh Li-ion battery</li>
+        <li>NEO-6M GPS reciever+GPS antenna</li>
+        <li>16GB microSD card</li>
+      <ul>
+    </div>
+
+    <div class = "box project">
+      <h2>
+        Comprimises and limitations
+      </h2>
+      <h3>
+        Exposed PCB and wiring
+      </h3>
+      <p>
+        Although a case that would cover both the display subassembly and PCB was originally intended, limitations with 3D printing meant that the bulge in the middle of the case that would be required to fit the PCB subassembly would not have printed properly. Printing a case for the display only was possible and would've allowed at least some protection for the panel. The PCB, however, remains exposed so the end product is still extremely fragile. This also means that the majority of cables are exposed and can be easily disconnected inadverntently.
+      </p>
+      <h3>
+        Raspian
+      </h3>
+      <p>
+        Due to limitations in the code for RaspAnd Pie, the RPi would not send display outputs through the display port to the official touchscreen and would only send signals through the HDMI port. I tried to boot the RPi with Android 8.1 enstead of 9.0 through <a href = "http://raspex.exton.se/?p=884">RaspAnd Oreo</a> to see if an earlier version of Android would run properly with the touchscreen. The RPi succesfully booted into Android 8.1 and was able to send display signals to the touchscreen. However, due to both limitations with the RPi and issues with thermal throttling, Android ended up running extremely poorly and was unusuable. Both Ubuntu MATE and Mint (Debian) were then used as alternatives. Unfourtunately, Mint was unable to boot on the RPi (even after I tried earlier releases and compilations for other ARM instruction sets). Ubuntu MATE did manage to boot on RPi but a bug relating to account password and the onscreen keyboard also rendered it unusable. 
+      <h3>
+        GPS INOP
+      </h3>
+      <h3>
+        Computing Power
+      </h3>
+      <h3>
+        Thickness
+      </h3>

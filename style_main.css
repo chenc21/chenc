@@ -17,6 +17,7 @@ a:hover {
 /*General div format*/
 .box h1,
 .box h2,
+.box h3,
 .box p,
 .box ul {
   padding: 0 12px;
