@@ -72,13 +72,23 @@
         Raspian
       </h3>
       <p>
-        Due to limitations in the code for RaspAnd Pie, the RPi would not send display outputs through the display port to the official touchscreen and would only send signals through the HDMI port. I tried to boot the RPi with Android 8.1 enstead of 9.0 through <a href = "http://raspex.exton.se/?p=884">RaspAnd Oreo</a> to see if an earlier version of Android would run properly with the touchscreen. The RPi succesfully booted into Android 8.1 and was able to send display signals to the touchscreen. However, due to both limitations with the RPi and issues with thermal throttling, Android ended up running extremely poorly and was unusuable. Both Ubuntu MATE and Mint (Debian) were then used as alternatives. Unfourtunately, Mint was unable to boot on the RPi (even after I tried earlier releases and compilations for other ARM instruction sets). Ubuntu MATE did manage to boot on RPi but a bug relating to account password and the onscreen keyboard also rendered it unusable. 
+        Due to limitations in the code for RaspAnd Pie, the RPi would not send display outputs through the display port to the official touchscreen and would only send signals through the HDMI port. I tried to boot the RPi with Android 8.1 enstead of 9.0 through <a href = "http://raspex.exton.se/?p=884">RaspAnd Oreo</a> to see if an earlier version of Android would run properly with the touchscreen. The RPi succesfully booted into Android 8.1 and was able to send display signals to the touchscreen. However, due to both limitations with the RPi and issues with thermal throttling, Android ended up running extremely poorly and was unusuable. Both Ubuntu MATE and Mint (Debian) were then used as alternatives. Unfourtunately, Mint was unable to boot on the RPi (even after I tried earlier releases and compilations for other ARM instruction sets). Ubuntu MATE did manage to boot on RPi but a bug relating to account password and the onscreen keyboard also rendered it unusable. I also tried to boot RPi with Chromium OS without success. Seeing this, I decided to temporarily use Raspian for the system until I could find a fix for the issues with other the OSs.
+      </p>
       <h3>
         GPS INOP
       </h3>
+      <p>
+        There was no driver availible for the GPS module to allow it to run on Raspian so thr GPS is inoperative.
+      </p>
       <h3>
         Computing Power
       </h3>
+      <p>
+        As mentioned before, RPi is severly limited in its computational abilities (especially with the minisucule 512MB RAM) so more demanding webapps such as video streaming as well as intensive multitasking may not be possible.
+      </p>
       <h3>
         Thickness
       </h3>
+      <p>
+        The touchscreen was too small to be able to fit all of the components with stacking PCBs on top of each other and layout of the screwholes meant that it was also impossible to fit either the battery board or RPi without significantly increasing the width of the tablet. Given this, I decided it was better just to stack the PCBs on top of each other though of course this meant that creating a huge bulge in the middle of the tablet.
+      </p>
